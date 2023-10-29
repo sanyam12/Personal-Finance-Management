@@ -1,4 +1,3 @@
-import 'package:personal_finance/features/manage_finance/data/models/month_allowance.dart';
 import 'package:personal_finance/features/manage_finance/domain/entities/month_allowance.dart';
 import 'package:personal_finance/features/manage_finance/domain/entities/transaction.dart';
 
@@ -23,6 +22,6 @@ abstract class MonthAllowanceRepository {
 
   Future<void> updateTotalSpent(int month, int amount);
 
-  Future<void> addNewMonth(MonthAllowanceModel monthAllowanceModel);
+  Future<bool> addNewMonth(MonthAllowanceEntity monthAllowanceEntity);
 
 }
